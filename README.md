@@ -55,7 +55,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solutoion Repository](https://github.com/codeAndcocoa/-Newsletter-sign-up-form-with-success-message.git)
-- Live Site URL: [Live site link](https://your-live-site-url.com)
+- Live Site URL: [Live site link](https://codeandcocoa.github.io/-Newsletter-sign-up-form-with-success-message/)
 
 ## My process
 
