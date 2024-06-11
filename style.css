@@ -1,0 +1,173 @@
+@font-face {
+  font-family: "Roboto Bold";
+  src: url(assets/fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "Roboto Regular";
+  src: url(assets/fonts/Roboto-Regular.ttf);
+}
+:root {
+  --primary1: hsl(4, 100%, 67%); /*  Tomato */
+  --neutral1: hsl(234, 29%, 20%); /* Dark Slate Grey */
+  --neutral2: hsl(235, 18%, 26%); /* Charcoal Grey */
+  --neutral3: hsl(231, 7%, 60%); /* Grey */
+  --neutral4: hsl(0, 0%, 100%); /* White */
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--neutral1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font: 1rem;
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  background-color: var(--neutral4);
+  width: 65%;
+  padding: 1rem;
+  border-radius: 15px;
+}
+.update-box {
+  width: 100%;
+}
+.subscribe {
+  flex:2;
+}
+/* Subscribe side and some styling of modal */
+.update-box h1,
+#verification-modal h1 {
+  font-family: "Roboto Bold";
+  color: var(--neutral1);
+}
+.update-box p,
+.update-box ul,
+#verification-modal p {
+  font-family: "Roboto Regular";
+  color: var(--neutral1);
+}
+.update-box p {
+  font-size: 1em;
+}
+.update-box ul {
+  max-width: 88%;
+}
+.email-form {
+  width: 70%;
+}
+.email-address {
+  font-family: "Roboto Bold";
+}
+
+.submit-button,
+.close-button {
+  outline: none;
+  border: none;
+  background-color: var(--neutral1);
+  color: var(--neutral4);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.submit-button:hover,
+.close-button:hover {
+  background: #ee0979; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    hsl(25, 77%, 45%),
+    hsl(331, 93%, 48%)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    hsl(25, 77%, 45%),
+    hsl(331, 93%, 48%)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Image side */
+.image{
+  flex:1.5;
+}
+.image img {
+  width: 100%;
+}
+
+/* Modal box */
+.modal {
+  background-color: var(--neutral1);
+ 
+
+}
+.modal-dialog {
+  background-color: var(--neutral4);
+  border-radius: 30px;
+  
+}
+
+
+.close-button {
+  margin: auto;
+  font-family: "Roboto Regular";
+}
+.subscribe-email {
+  font-family: "Roboto Bold";
+}
+/* Media queries */
+
+@media screen and (max-width: 992px) {
+  .container-fluid {
+    width: 70%;
+    padding: 0;
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body{
+    background-color: var(--neutral4);
+  }
+  .container-fluid {
+    width: 100%;
+    padding: 0;
+  }
+  .email-form {
+   margin-bottom: 2.3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container-fluid {
+    width: 100%;
+    padding: 0;
+  }
+  .email-form {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .container-fluid {
+    width: 80%;
+  }
+}
+@media screen and (min-width:1024px){
+  .modal-dialog{
+    position: absolute;
+    top:20%;
+    left:35%;
+  
+   
+  }
+}
+@media screen and (min-height: 1280px) {
+  body {
+    height: 66vh;
+  }
+}
